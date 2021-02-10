@@ -9,11 +9,11 @@ const App = () => {
   const [val, setVal] = React.useState(0);
   
 const spinValue =  new Animated.Value(val);
-  rotateImage = () => {
+ const rotateImage = () => {
     setVal(val + 1);
   };
 
-  spin = spinValue.interpolate({
+ const spin = spinValue.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '90deg']
   });
