@@ -27,7 +27,7 @@ const spinValue =  new Animated.Value(val);
         style={{transform: [{rotate: spin}], height: 400, width: 400,  alignSelf: 'center', marginTop: 80}}
         source={require('./src/assets/harshil.jpeg')} />
         </Animated.View>
-        <TouchableOpacity style={{paddingRight: 4, marginTop: 100}} onPress={this.rotateImage}>
+        <TouchableOpacity style={{paddingRight: 4, marginTop: 100}} onPress={rotateImage}>
                 <Image style={{width: 60, height: 60,  alignSelf: 'center'}}
                 source={require('./src/assets/rotate.png')}/>
                 </TouchableOpacity>
